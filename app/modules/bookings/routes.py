@@ -1,4 +1,4 @@
-"""Routes for Company App."""
+"""Routes for Bookings App."""
 
 from fastapi import APIRouter, status, Form, UploadFile, File
 from fastapi.responses import JSONResponse
@@ -8,20 +8,25 @@ router = APIRouter()
 
 
 @router.post(
-    "/applicants",
+    "/bookings",
     status_code=status.HTTP_201_CREATED,
-    tags=["Applicants"],
+    tags=["Bookings"],
 )
-async def create_applicant(
-    name: str = Form(..., min_length=5, max_length=100),
-    email: str = Form(..., min_length=5, max_length=100),
-    phone: str = Form(..., min_length=12, max_length=12),
-    cv: UploadFile = File(None),
-    message: str = Form(None),
+async def create_booking(
+    first_name: str = Form(..., max_length=100),
+    last_name: str = Form(..., max_length=100),
+    phone: str = Form(..., max_length=15),
+    notes: str = Form(None),
+    references: UploadFile = File(None),
+    artist_id: str = Form(..., min_length=40, max_length=40),
+    estimated_budget: float = Form(),
+    tattoo_placement: str = Form(..., max_length=20),
+    is_first_time: bool = Form(default=False),
+    is_work_in_progress: bool = Form(default=False),
 ):
     try:
         return JSONResponse(
-            content={"detail": "Application created successfully."},
+            content={"detail": "Record created successfully."},
             status_code=status.HTTP_201_CREATED,
         )
 
