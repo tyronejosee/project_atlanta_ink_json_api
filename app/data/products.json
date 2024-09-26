@@ -1,0 +1,97 @@
+{
+  "count": 11,
+  "next": "http://127.0.0.1:8100/api/products?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": "0edd4620-0503-4f67-9444-7086ee469e82",
+      "name": "Cheyenne Hawk Pen Unio - Black",
+      "slug": "cheyenne-hawk-pen-unio-black",
+      "price": "1169.00",
+      "brand": "Cheyenne",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1726588187/qijj8stvnxh5wewxypvm.webp",
+      "category": "Tattoo Machines"
+    },
+    {
+      "id": "21a613c1-cd33-432a-ae21-9012c9509699",
+      "name": "Sorry Mom Tattoo Balm 40ml",
+      "slug": "sorry-mom-tattoo-balm-40ml",
+      "price": "13.00",
+      "brand": "Sorry Mom",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727293056/d8lbtdaue2ohrnzaremo.webp",
+      "category": "Studio Supplies"
+    },
+    {
+      "id": "224633ea-e833-4251-a510-86eb2feae0e6",
+      "name": "Cheyenne Hawk Thunder Tattoo Machine - Silver",
+      "slug": "cheyenne-hawk-thunder-tattoo-machine-silver",
+      "price": "299.99",
+      "brand": "Cheyenne",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1726587905/unzpgn7kzivgofe7hd5t.webp",
+      "category": "Tattoo Machines"
+    },
+    {
+      "id": "2462cd49-7676-42f8-a16f-6883381d28ed",
+      "name": "Unigloves Select Disposable Cups (Various Colours)Unigloves Select Disposable Cups (Various Colours)",
+      "slug": "unigloves-select-disposable-cups-various-coloursunigloves-select-disposable-cups-various-colours",
+      "price": "6.00",
+      "brand": "Unigloves",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727293121/qrmusjj8gjfxujt4ryjo.webp",
+      "category": "Studio Supplies"
+    },
+    {
+      "id": "2dded405-9ec7-4b55-babb-faf4a829cc6b",
+      "name": "Cotton Tree Petroleum Jelly 284g",
+      "slug": "cotton-tree-petroleum-jelly-284g",
+      "price": "3.00",
+      "brand": "Cotton Tree",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727292795/ql22rcdycuj4jvowofw6.webp",
+      "category": "Studio Supplies"
+    },
+    {
+      "id": "3d23b50f-efbb-43a9-9919-b7e1a33f8de3",
+      "name": "Inksafe Black Cohesive Bandages / Grip Wrap (Box of 12)",
+      "slug": "inksafe-black-cohesive-bandages-grip-wrap-box-of-12",
+      "price": "10.00",
+      "brand": "Inksafe",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727292960/k8s8rl7xszzttmgc0zim.webp",
+      "category": "Studio Supplies"
+    },
+    {
+      "id": "42f89b15-7cdb-4d05-9eb4-f50f40a7c299",
+      "name": "Monsters Ink Cups 13mm x 10mm 100pcs",
+      "slug": "monsters-ink-cups-13mm-x-10mm-100pcs",
+      "price": "6.00",
+      "brand": "Monsters Ink",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727293206/bbudvawoo5klnbdz018y.webp",
+      "category": "Studio Supplies"
+    },
+    {
+      "id": "4993c7bc-56dc-4bfe-8422-6d1323c13493",
+      "name": "Sasha Masiuk x Bishop Wand Rotary Tattoo Machine (Artist Series) - Liner Edition",
+      "slug": "sasha-masiuk-x-bishop-wand-rotary-tattoo-machine-artist-series-liner-edition",
+      "price": "999.99",
+      "brand": "Bishop",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1726588020/dpclupsa7wwirkyqf0yp.webp",
+      "category": "Tattoo Machines"
+    },
+    {
+      "id": "92c05e6d-8256-49ac-a31b-db305c8504ed",
+      "name": "Click to expand Rating 5 out of 5 stars 1 votes Rating 4 out of 5 stars 0 votes Rating 3 out of 5",
+      "slug": "click-to-expand-rating-5-out-of-5-stars-1-votes-rating-4-out-of-5-stars-0-votes-rating-3-out-of-5",
+      "price": "17.00",
+      "brand": "Unigloves",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1727292608/hc3hihgwhc6tywrrk5qz.webp",
+      "category": "Studio Supplies"
+    },
+    {
+      "id": "bb82000f-3766-43f8-b1b7-e71eefbbbb50",
+      "name": "Dragonhawk Mast Tour Y22 Wireless Pen PMU Tattoo Machine (Various Colors)",
+      "slug": "dragonhawk-mast-tour-y22-wireless-pen-pmu-tattoo-machine-various-colors",
+      "price": "308.00",
+      "brand": "Dragonhawk",
+      "image": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1726588438/kkltrofp1j35pgvafern.webp",
+      "category": "Tattoo Machines"
+    }
+  ]
+}
