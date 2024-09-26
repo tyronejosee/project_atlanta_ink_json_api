@@ -2,16 +2,20 @@
 
 from typing import List
 
-from app.utils.mixins import BaseSchema
+from pydantic import BaseModel
 
 
-class Style(BaseSchema):
+class Style(BaseModel):
 
+    id: str
     name: str
+    updated_at: str
+    created_at: str
 
 
-class Artist(BaseSchema):
+class Artist(BaseModel):
 
+    id: str
     name: str
     image: str
     instagram: str
@@ -20,3 +24,5 @@ class Artist(BaseSchema):
     slug: str
     styles: List[Style]
     is_team: bool
+    updated_at: str
+    created_at: str

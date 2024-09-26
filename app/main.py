@@ -19,6 +19,14 @@ from app.modules.tattoos import routes as tattoos
 # API Metadata
 tags_metadata = [
     {
+        "name": "Company",
+        "description": "Operations related to Company",
+    },
+    {
+        "name": "Applicants",
+        "description": "Operations related to Applicants",
+    },
+    {
         "name": "Artists",
         "description": "Operations related to Artists",
     },
@@ -27,25 +35,28 @@ tags_metadata = [
         "description": "Operations related to Tattoos",
     },
     {
-        "name": "Company",
-        "description": "Operations related to Company",
+        "name": "Bookings",
+        "description": "Operations related to Bookings",
+    },
+    {
+        "name": "Products",
+        "description": "Operations related to Products",
     },
 ]
 
 # Initialize FastAPI app
 app = FastAPI(
     title=settings.PROJECT_NAME,
-    summary="A JSON API created for the Coding Latam community.",
-    description=("\nAccess the API documentation at `/docs` or `/redoc`."),
+    summary="An API for managing content at Atlanta Ink.",
+    description="\nA tattoo studio.",
     version=str(os.environ.get("API_VERSION")),
-    # terms_of_service="http://example.com/terms/",
     contact={
-        "name": "Coding Latam GitHub",
-        "url": "https://github.com/Coding-Latam",
+        "name": "Tyrone José GitHub",
+        "url": "https://github.com/tyronejosee",
     },
     license_info={
         "name": "MIT License",
-        "url": "https://github.com/tyronejosee/",
+        "url": "https://github.com/tyronejosee/project_atlanta_ink/blob/main/LICENSE",
     },
     debug=False,
     openapi_tags=tags_metadata,

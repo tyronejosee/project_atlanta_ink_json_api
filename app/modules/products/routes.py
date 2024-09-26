@@ -1,11 +1,32 @@
 """Routes for Products App."""
 
+from typing import List
 from fastapi import APIRouter, Query, HTTPException
 
 from app.utils.helpers import load_json
-from .schemas import ProductMinimal, ProductPaginated
+from .schemas import Brand, Category, ProductMinimal, ProductPaginated
 
 router = APIRouter()
+
+
+@router.get(
+    "/brands",
+    response_model=List[Brand],
+    tags=["Products"],
+)
+async def get_brands():
+    brands_data = load_json("app/data/brands.json")
+    return brands_data
+
+
+@router.get(
+    "/categories",
+    response_model=List[Category],
+    tags=["Products"],
+)
+async def get_categories():
+    categories_data = load_json("app/data/categories.json")
+    return categories_data
 
 
 @router.get(
