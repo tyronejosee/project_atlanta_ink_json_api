@@ -12,6 +12,7 @@ from app.modules.applicants import routes as applicants
 from app.modules.artists import routes as artists
 from app.modules.bookings import routes as bookings
 from app.modules.company import routes as company
+from app.modules.products import routes as products
 from app.modules.tattoos import routes as tattoos
 
 
@@ -72,11 +73,11 @@ async def not_found_error(request: Request, exc: Exception):
 
 
 # Include routers
-# app.include_router(products.router, prefix=settings.API_V1_STR)
 app.include_router(applicants.router, prefix=settings.API_V1_STR)
 app.include_router(artists.router, prefix=settings.API_V1_STR)
 app.include_router(bookings.router, prefix=settings.API_V1_STR)
 app.include_router(company.router, prefix=settings.API_V1_STR)
+app.include_router(products.router, prefix=settings.API_V1_STR)
 app.include_router(tattoos.router, prefix=settings.API_V1_STR)
 
 
