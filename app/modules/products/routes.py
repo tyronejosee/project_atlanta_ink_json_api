@@ -59,9 +59,11 @@ async def get_products(
     elif sort_by == SortChoices.OLDEST:
         products_data = sorted(products_data, key=lambda x: x["id"])
     elif sort_by == SortChoices.HIGHEST_PRICE:
-        products_data = sorted(products_data, key=lambda x: x["price"], reverse=True)
+        products_data = sorted(
+            products_data, key=lambda x: float(x["price"]), reverse=True
+        )
     elif sort_by == SortChoices.LOWEST_PRICE:
-        products_data = sorted(products_data, key=lambda x: x["price"])
+        products_data = sorted(products_data, key=lambda x: float(x["price"]))
 
     # Search filter
     if search:
