@@ -4,7 +4,7 @@ from typing import List, Optional
 from fastapi import APIRouter, Query, HTTPException
 
 from app.utils.helpers import load_json
-from .schemas import Brand, Category, ProductMinimal, ProductPaginated
+from .schemas import Brand, Category, Product, ProductMinimal, ProductPaginated
 from .choices import SortChoices
 
 router = APIRouter()
@@ -86,6 +86,7 @@ async def get_products(
         ]
 
     products = [ProductMinimal(**item) for item in products_data]
+
     BASE_URL = "http://127.0.0.1:8100/api/"  # TODO: Add .env
 
     # Pagination
@@ -108,7 +109,7 @@ async def get_products(
 
 @router.get(
     "/products/{slug}",
-    response_model=ProductMinimal,
+    response_model=Product,
     tags=["Products"],
 )
 async def get_product_by_slug(slug: str):
